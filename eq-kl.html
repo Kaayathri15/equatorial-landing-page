@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQ Kuala Lumpur | The New Standard of Luxury</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .bg-brand-red { background-color: #8A1538; }
+        .text-brand-red { color: #8A1538; }
+        .gold-border { border-color: #C5A059; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <nav class="absolute w-full z-50 text-white p-6 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-widest">EQ <span class="font-light">KUALA LUMPUR</span></div>
+        <div class="space-x-8 text-xs uppercase tracking-widest font-bold">
+            <a href="#" class="hover:text-gray-300">Rooms</a>
+            <a href="#" class="hover:text-gray-300">Dining</a>
+            <a href="#" class="hover:text-gray-300">Spa</a>
+        </div>
+    </nav>
+
+    <section class="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?auto=format&fit=crop&w=1920"
+                 class="w-full h-full object-cover scale-105" alt="EQ KL Exterior">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl px-4">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Welcome to the Landmark</span>
+            <h1 class="text-6xl md:text-8xl mb-6">Elevated Above All.</h1>
+            <p class="text-xl font-light italic">The most awarded hotel in Kuala Lumpur.</p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto -mt-16 relative z-30 bg-white shadow-2xl p-8 border-t-4 border-brand-red">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-end">
+            <div class="space-y-2">
+                <label class="block text-[10px] font-bold uppercase tracking-widest text-gray-500">Check-In</label>
+                <input type="date" class="w-full border-b border-gray-300 py-2 outline-none focus:border-brand-red transition">
+            </div>
+            <div class="space-y-2">
+                <label class="block text-[10px] font-bold uppercase tracking-widest text-gray-500">Check-Out</label>
+                <input type="date" class="w-full border-b border-gray-300 py-2 outline-none focus:border-brand-red transition">
+            </div>
+            <div class="space-y-2">
+                <label class="block text-[10px] font-bold uppercase tracking-widest text-gray-500">Guests & Rooms</label>
+                <select class="w-full border-b border-gray-300 py-2 outline-none focus:border-brand-red bg-transparent">
+                    <option>2 Adults, 1 Room</option>
+                    <option>1 Adult, 1 Room</option>
+                    <option>2 Adults, 2 Rooms</option>
+                </select>
+            </div>
+            <button class="bg-brand-red text-white py-4 px-8 font-bold text-sm tracking-widest hover:bg-neutral-900 transition duration-500">
+                BOOK YOUR STAY
+            </button>
+        </div>
+    </div>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-brand-red font-bold tracking-widest text-xs uppercase">Unrivaled Excellence</span>
+                <h2 class="text-4xl md:text-5xl mt-4 mb-6">A New Legacy in the Heart of KL</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Rising 52 storeys above the Golden Triangle, EQ is the rebirth of a legend. Offering 440 rooms with floor-to-ceiling views of the PETRONAS Twin Towers, we combine heritage service with cutting-edge design.
+                </p>
+                <div class="grid grid-cols-2 gap-8 border-l-2 gold-border pl-8">
+                    <div>
+                        <h4 class="font-bold text-2xl serif">#1</h4>
+                        <p class="text-xs uppercase text-gray-500">Ranked on TripAdvisor</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-2xl serif">Award</h4>
+                        <p class="text-xs uppercase text-gray-500">Travel + Leisure 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800" alt="EQ Room View" class="rounded-sm shadow-xl">
+                <div class="absolute -bottom-10 -left-10 bg-brand-red text-white p-10 hidden md:block">
+                    <p class="text-sm italic">"The view from the Sky51 deck is unparalleled in all of Malaysia."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-50 py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl text-center mb-16">The Collection</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800" class="group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold">Deluxe King Room</h3>
+                    <p class="text-sm text-gray-500 mt-2 mb-4 italic">Twin Tower Views</p>
+                    <button class="text-brand-red font-bold text-xs border-b border-brand-red">VIEW ROOM</button>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800" class="group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold">Executive Suite</h3>
+                    <p class="text-sm text-gray-500 mt-2 mb-4 italic">Club Lounge Access</p>
+                    <button class="text-brand-red font-bold text-xs border-b border-brand-red">VIEW ROOM</button>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800" class="group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold">Presidential Suite</h3>
+                    <p class="text-sm text-gray-500 mt-2 mb-4 italic">Ultimate Luxury</p>
+                    <button class="text-brand-red font-bold text-xs border-b border-brand-red">VIEW ROOM</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="text-xl font-bold tracking-[0.4em] mb-4">EQ</div>
+            <p class="text-gray-500 text-sm">Jalan Sultan Ismail, 50250 Kuala Lumpur, Malaysia</p>
+            <div class="flex justify-center space-x-6 mt-8 text-xs text-gray-400">
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

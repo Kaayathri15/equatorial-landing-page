@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equatorial Group | Exceptional Hospitality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .bg-brand-red { background-color: #8A1538; }
+        .text-brand-red { color: #8A1538; }
+        .nav-glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+
+        .swiper { width: 100%; height: 100vh; position: absolute; top: 0; left: 0; z-index: -1; }
+        .swiper-slide img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5); }
+
+        .promo-card:hover .promo-img { transform: scale(1.05); }
+        .transition-all-500 { transition: all 0.5s ease; }
+
+        .urgency-badge { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <nav class="fixed w-full z-50 nav-glass border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-widest text-brand-red uppercase">
+                Equatorial <span class="font-light text-gray-400">Group</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-bold">
+                <a href="#portfolio" class="hover:text-brand-red transition">Portfolio</a>
+                <a href="#promotions" class="hover:text-brand-red transition">Promotions</a>
+                <a href="#dining" class="hover:text-brand-red transition">Dining</a>
+                <a href="#events" class="hover:text-brand-red transition">Events</a>
+            </div>
+            <button class="bg-brand-red text-white px-8 py-3 text-xs font-bold tracking-widest hover:bg-black transition">BOOK NOW</button>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center text-white">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1920" alt="Resort"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1920" alt="Lobby"></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920" alt="Suite"></div>
+            </div>
+        </div>
+        <div class="relative z-10 max-w-4xl px-4">
+            <span class="uppercase tracking-[0.4em] text-sm mb-4 block">Since 1973</span>
+            <h1 class="text-6xl md:text-8xl mb-6">Asian Hospitality, <br>Redefined.</h1>
+            <div class="flex justify-center gap-6">
+                <a href="#portfolio" class="bg-white text-black px-10 py-4 font-bold text-xs tracking-widest hover:bg-brand-red hover:text-white transition">EXPLORE DESTINATIONS</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white py-12 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase w-full text-center mb-4 md:mb-0 md:w-auto">Awarded Excellence:</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Tripadvisor_Logo.svg" class="h-6" alt="TripAdvisor">
+            <div class="text-xl font-serif font-bold italic text-gray-800">Travel + Leisure</div>
+            <div class="text-lg font-bold tracking-tighter text-gray-800 uppercase">Forbes <span class="font-light">Travel Guide</span></div>
+            <div class="text-sm font-bold border-2 border-gray-800 px-2">MICHELIN 2024</div>
+        </div>
+    </section>
+
+    <section id="promotions" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-brand-red font-bold tracking-widest text-xs uppercase">Exclusive Offers</span>
+                    <h2 class="text-4xl mt-2">Current Promotions</h2>
+                </div>
+                <a href="#" class="text-sm font-bold border-b-2 border-brand-red pb-1 mt-4 md:mt-0">VIEW ALL OFFERS</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="relative overflow-hidden group promo-card h-[450px]">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1200" class="absolute inset-0 w-full h-full object-cover promo-img transition-all-500">
+                    <div class="absolute top-6 right-6 z-20 bg-brand-red text-white px-4 py-2 text-[10px] font-bold tracking-widest uppercase urgency-badge">
+                        Limited Time: 5 Rooms Left
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all-500"></div>
+                    <div class="absolute bottom-0 p-10 text-white">
+                        <h3 class="text-3xl mb-2">The Ultimate Escape</h3>
+                        <p class="text-sm opacity-90 mb-6 font-light">Stay 3 nights and enjoy a complimentary 4th night plus spa credit.</p>
+                        <button class="bg-white text-black px-6 py-3 text-xs font-bold tracking-widest hover:bg-brand-red hover:text-white transition">BOOK SPECIAL RATE</button>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden group promo-card h-[450px]">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200" class="absolute inset-0 w-full h-full object-cover promo-img transition-all-500">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all-500"></div>
+                    <div class="absolute bottom-0 p-10 text-white">
+                        <h3 class="text-3xl mb-2">Culinary Journey</h3>
+                        <p class="text-sm opacity-90 mb-6 font-light">Experience award-winning dining with daily breakfast and dinner for two.</p>
+                        <button class="bg-white text-black px-6 py-3 text-xs font-bold tracking-widest hover:bg-brand-red hover:text-white transition">VIEW PACKAGE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl">Our Iconic Destinations</h2>
+            <div class="w-20 h-1 bg-brand-red mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="group">
+                <div class="overflow-hidden aspect-[3/4] mb-6 bg-zinc-200">
+                    <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?auto=format&fit=crop&q=80&w=800"
+                         alt="EQ Kuala Lumpur" class="object-cover w-full h-full group-hover:scale-105 transition-all-500">
+                </div>
+                <h3 class="text-2xl mb-2">EQ Kuala Lumpur</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">Rising 52 storeys above the Golden Triangle, defining the city skyline.</p>
+                <a href="eq-kl.html" class="text-xs font-bold tracking-widest text-brand-red border-b border-brand-red pb-1">DISCOVER MORE</a>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden aspect-[3/4] mb-6 bg-zinc-200">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800"
+                         alt="Equatorial HCMC" class="object-cover w-full h-full group-hover:scale-105 transition-all-500">
+                </div>
+                <h3 class="text-2xl mb-2">Equatorial HCMC</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">A central hub for business excellence and Vietnamese culture.</p>
+                <a href="eq-hcmc.html" class="text-xs font-bold tracking-widest text-brand-red border-b border-brand-red pb-1">DISCOVER MORE</a>
+            </div>
+            <div class="group">
+                <div class="overflow-hidden aspect-[3/4] mb-6 bg-zinc-200">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800"
+                         alt="Equatorial Penang" class="object-cover w-full h-full group-hover:scale-105 transition-all-500">
+                </div>
+                <h3 class="text-2xl mb-2">Equatorial Penang</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">A serene hilltop resort with a world-class championship golf course.</p>
+                <a href="eq-penang.html" class="text-xs font-bold tracking-widest text-brand-red border-b border-brand-red pb-1">DISCOVER MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dining" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 relative">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1000" alt="Kampachi Dining" class="shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                <div class="absolute -top-10 -left-10 bg-brand-red text-white p-12 hidden lg:block">
+                    <h4 class="text-4xl serif italic">Kampachi</h4>
+                    <p class="text-xs uppercase tracking-widest mt-2">The Legend of Japanese Cuisine</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <span class="text-brand-red font-bold tracking-widest text-xs uppercase font-bold">Culinary Excellence</span>
+                <h2 class="text-5xl mt-4 mb-8">A Legacy of Taste</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Equatorial is home to some of Asia's most iconic dining destinations. From the authentic Japanese mastery of Kampachi to the grand Cantonese flavors of Golden Phoenix, every meal is a celebration.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 font-semibold"><div class="w-1.5 h-1.5 bg-brand-red rounded-full"></div>Award-winning Chef Curated Menus</li>
+                    <li class="flex items-center gap-3 font-semibold"><div class="w-1.5 h-1.5 bg-brand-red rounded-full"></div>Bespoke Private Dining Rooms</li>
+                </ul>
+                <button class="bg-black text-white px-10 py-4 text-xs font-bold tracking-widest hover:bg-brand-red transition">EXPLORE DINING</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="py-24 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-brand-red font-bold tracking-widest text-xs uppercase">Unforgettable Moments</span>
+                <h2 class="text-5xl mt-4 mb-8">Meetings, Events <br>& Weddings</h2>
+                <p class="text-gray-400 leading-relaxed mb-10 font-light">
+                    From state-of-the-art boardrooms to grand ballrooms that have hosted the city's most prestigious weddings, Equatorial provides the perfect backdrop for every occasion.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4 p-4 border border-white/10 hover:border-brand-red transition">
+                        <div class="w-12 h-12 bg-white/5 flex items-center justify-center font-serif text-xl">01</div>
+                        <div>
+                            <h4 class="font-bold">Bespoke Weddings</h4>
+                            <p class="text-sm text-gray-500">Dedicated specialists to craft your perfect day.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 border border-white/10 hover:border-brand-red transition">
+                        <div class="w-12 h-12 bg-white/5 flex items-center justify-center font-serif text-xl">02</div>
+                        <div>
+                            <h4 class="font-bold">MICE & Corporate</h4>
+                            <p class="text-sm text-gray-500">Industry-leading tech and seamless event management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1000" alt="Events" class="shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-gray-900 py-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 border-b border-gray-100 pb-12">
+            <div>
+                <div class="text-xl font-bold mb-6 tracking-widest uppercase text-brand-red">Equatorial</div>
+                <p class="text-sm text-gray-500">Defining hospitality in Southeast Asia since 1973.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-xs uppercase tracking-widest">Our Hotels</h4>
+                <ul class="text-sm text-gray-500 space-y-4">
+                    <li><a href="eq-kl.html" class="hover:text-brand-red transition">EQ Kuala Lumpur</a></li>
+                    <li><a href="eq-hcmc.html" class="hover:text-brand-red transition">Equatorial HCMC</a></li>
+                    <li><a href="eq-penang.html" class="hover:text-brand-red transition">Equatorial Penang</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-xs uppercase tracking-widest">Newsletter</h4>
+                <div class="flex border-b border-gray-300">
+                    <input type="email" placeholder="Your Email" class="bg-transparent p-3 text-sm flex-1 outline-none">
+                    <button class="text-brand-red font-bold text-xs uppercase">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 text-[10px] uppercase tracking-[0.2em] text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2025 Equatorial Hotel Management.</p>
+            <div class="flex gap-6">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade",
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            loop: true,
+        });
+    </script>
+</body>
+</html>
